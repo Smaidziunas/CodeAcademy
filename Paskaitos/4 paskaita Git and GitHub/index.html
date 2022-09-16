@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git & GitHub</title>
+<link rel="stylesheet" href="./styles/main.css">
+<link rel="icon" href="../3 paskaita CSS sudetingesni/images/coding.jpg"> <!-- Tab'o icona -->
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#position">Position</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="position"> <!-- Position --></section>
+    <h1>Position</h1>
+    <ul>
+      <li>Static - Statinė</li>
+      <li>Relative - Reliatyvioji</li>
+      <li>Absolute - Absoliučioji</li>
+      <li>Fixed - Fiksuotoji</li>
+      <li>Sticky - Lipnioji</li>
+    </ul> 
+    <p>
+      Naudojant bet kurią apart <b>Statinės</b> pozicijos, gauname priegą prie 5 naujų stilių: top, left, right, bottom, z-index. <br> Šitie stiliai nurodo per kokį atstumą elementasturi būti atitrauktas.
+    </p>
+    <div> <!-- Statinė pozicija -->
+        <p>
+      Statinė pozicija - nieko ypatingo nedaro. Net nesuteikia galimybės naudoti top/left/right/bottom;
+    </p>
+    <div class="kvadratuKonteineris">
+      <div class="kvadratas statinis">Static</div>
+      <div class="kvadratas statinis">Static</div>
+      <div class="kvadratas statinis">Static</div>
+      <div class="kvadratas statinis">Static</div>
+    </div>
+    </div>
+    <div> <!-- Statinė pozicija -->
+      <p>
+    Reliatyvioji pozicija - nieko ypatingo nedaro. Bet suteikia galimybe naudoti top/left/right/bottom ir z-index.<br> Elementui suteikus top/left/right/bottom ar z-index stilius, elementas pasitraukia per nurodytą atstumą nuo savo pradinės pozicijos, o ne nuo kito elemento.
+  </p>
+  <div class="kvadratuKonteineris">
+    <div class="kvadratas statinis top_20">Relative 1</div>
+    <div class="kvadratas reliatyvus top_20">Relative 2</div>
+    <div class="kvadratas reliatyvus left_30 z_index">Relative 3</div>
+    <div class="kvadratas reliatyvus">Relative 4</div>
+  </div>
+  <p>
+    Absoliučioji pozicija - elementas išeina iš puslapio tiekmės. Praranda savo poziciją, ir sekantis elementas užima jo vietą (užstoja).<br> Elementui nurodžius top/left/right/bottom ir z-index stiliuys, jis atsitraukia per nurodytą atstumą artimiausio tėvinio/elemento, kuris turi reliatyviąją poziciją (jeigu neranda - atsitraukia nuo html (ekrano taškų)).
+  </p>
+  <div class="kvadratuKonteineris">
+    <div class="kvadratas statinis">Static 2</div>
+    <div class="kvadratas statinis">Static 2</div>
+    <div class="kvadratas statinis">Static 3</div>
+    <div class="kvadratas absoliutus">Absolute 4</div>
+  </div>
+  <p>
+    Fiksuotoji pozicija - elementas išeina iš puslapio tiekmės. Praranda savo poziciją, ir sekantis elementas užima jo vietą (užstoja).<br> Elementui nurodžius top/left/right/bottom ir z-index stiliuys, jis atsitraukia per nurodytą atstumą artimiausio tėvinio/elemento, kuris turi reliatyviąją poziciją (jeigu neranda - atsitraukia nuo html (ekrano taškų)). Taip pat jeigu nėra nustatytas elemento dydis, elementas sumažėja iki minimalaus dydžio.
+  </p>
+  <div class="kvadratuKonteineris">
+    <div class="kvadratas statinis">Static 1</div>
+    <div class="kvadratas statinis">Static 2</div>
+    <div class="kvadratas fiksuotas top_20 z-index">Fixed 3</div>
+    <div class="kvadratas statinis">Static 4</div>
+  </div>
+  <p>
+    Lipnioji pozicija - Neišeina iš puslapio tėkmės (kaip kad reliatyvus ir fiksuotas). Ekrano kraštams priartėjus prie jo, jis prilimpa prie ekrano krašto per nurodytą top/left/right/bottom ir z-index atstumą ir juda kartu su ekranu, kol nepasiekia savo tėvinio elemento ribų.
+  </p>
+  <div class="kvadratuKonteineris reliatyvus stickyKonteineris z_index">
+    <div class="kvadratas statinis">Static 1</div>
+    <div class="kvadratas statinis">Static 2</div>
+    <div class="kvadratas statinis">Static 3</div>
+    <div class="kvadratas lipnus top_20">Sticky 4</div>
+  </div>
+  <div style="height: 1500px;">
+  </div>
+  </main>
+  <section> <!-- git gitHub -->
+    <div>
+      <h1>Terminalo GitBash komandos</h1>
+    <ul>
+      <p>
+      <li>cd - change directory - pakeisti direktoriją - Vaikščiojimas tarp aplnakalų</li>
+      <li> .. - grižta atgal</li>
+      <li>ls - list files and directories</li>
+      <li>CTRL C - atšaukia vykdomą veiksmą</li>
+      <li>TAB - Užbaigia frazę arba pateikia pasiūlymus</li>
+      <li>clear - nukelia visą ekrane rodomą informaciją į viršų</li>
+      <li>rm -fr "FILE NAME" - Panaikina Master Repozitorija</li>
+      <li>code . - atidaro visus folders ir failus toje aplinkoje ir nustatyta code editor sistemą</li>
+      
+      </p>
+    </ul>
+    </div>
+    <div> <!-- git Config -->
+      <h1>Git Config</h1>
+      <ul>
+        <p>
+        <li>init - initialize - inicializuoti</li>
+        <li>status - parodo informaciją apie failus esamoje repozitorijoje<br> Tuščius aplankus ignoruoja</li>
+        <li>add - stage'ina/prideda/paruošia failus commit'inimui, arba add ir (.), kad įdėtų visus failus</li>
+        <li>commit -m "Comm'ito žinutė"- </li>  
+        </p>
+      
+
+      </ul>
+    </div>
+  </section>
+</body>
+</html>

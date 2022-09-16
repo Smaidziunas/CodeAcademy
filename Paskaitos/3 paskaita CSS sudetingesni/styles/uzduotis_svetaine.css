@@ -1,0 +1,92 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+header{
+  background-color: rgba(240, 141, 27, 1);
+  height: 50px;
+  position: sticky;
+  top: 0;
+}
+
+/* POSITIONING */
+.fixed{
+  position: fixed;
+}
+.sticky{
+  position: sticky;
+}
+
+
+.logoImg{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: auto;
+  height: 40px;
+}
+
+.inlineBlockDisplay{
+  display:inline-block;
+}
+.inlineDisplay{
+  display:inline;
+}
+
+.menuListItem{
+  display:inline-block;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.menuDiv{
+  width: 30%;
+    float:right;
+}
+.footerDiv{
+  width: 30%;
+    float:none;
+}
+
+a:link{
+  color: black;
+}
+a:visited{
+  color: black;
+}
+
+.noDecor{
+  text-decoration:none;
+}
+.noDecor:hover{
+  color:whitesmoke;
+}
+
+.menuList{
+padding: 0;
+}
+
+.noBullets{
+  list-style-type:none;
+}
+
+.linijinisBlokinis{
+  display: inline;
+}
+
+footer {
+  padding: 3px;
+  background-color: rgba(240, 141, 27, 0.76);
+  color: white;
+}
+
+.logoFooterDiv{
+  width: 30%;
+    float:right;
+}

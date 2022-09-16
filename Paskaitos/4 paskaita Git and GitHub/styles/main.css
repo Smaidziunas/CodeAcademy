@@ -1,0 +1,50 @@
+.kvadratas{
+  display: inline-block;
+  background-color:aquamarine;
+  border: 3px solid black;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.kvadratuKonteineris{
+  background-color: antiquewhite;
+}
+
+.statinis{
+  position: static;
+}
+.reliatyvus{
+  position: relative;
+}
+.absoliutus{
+position: absolute;
+}
+.fiksuotas{
+  position: fixed;
+}
+.lipnus{
+  position: sticky;
+}
+
+
+.stickyKonteineris{
+  height: 300px;
+}
+
+
+
+.top_20{
+  top: 20px;
+}
+
+.left_30{
+  left: 30px;
+}
+.z_index{
+  z-index: 10;
+   /* užlipa arba atitraukia elementą, įdeda z (gylio) kooardinate */
+}
+

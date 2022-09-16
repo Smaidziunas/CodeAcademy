@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> 1 paskaita - HTML įžanga</title>
+    <style>
+p{
+  font-weight: bold;
+  color:rgb(5, 5, 58);
+}
+#sugalvotasIDpavadinimas{
+line-height: 30px;
+color: darkgoldenrod; 
+}
+.sugalvotasKlasesPavadinimas{
+  border: 10px solid purple;
+  border-radius: 10%;
+} 
+.naujaklase{
+  color:rgb(6, 10, 10)
+}
+    </style>
+
+<link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div style="font-family:Georgia, 'Times New Roman', Times, serif;"> <!-- Inline CSS -->
+    <h1>Inline CSS - Linijinis CSS</h1>
+    <p style="color:blue; font-size: 20px; background-color:azure">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro!
+    </p>
+    <p style="color:chartreuse">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, suscipit?
+    </p>
+    <p>
+      Linijinis Stilizavimas - Naudojamas kai norisi greitai pastilizuoti arba testuotis stilius.
+    </p>
+  </div>
+  <div><!-- Vidinis CSS -->
+    <h1>Internal CSS - Vidinis CSS</h1>
+    <p id="sugalvotasIDpavadinimas">
+      Vienas ID turi būti priskirtas tik vienam elementui, Vienas elementas turi turėti TIK vieną ID.
+    </p>
+    <p class="sugalvotasKlasesPavadinimas naujaklase">
+      Viena Klasė gali būti priskiriama daugeliui elementų, ir vienas elemntas gali būti priskiriamas daugeliui klasių.
+    </p>
+  </div>
+  <div> <!-- External CSS -->
+<h1>External CSS - Išorinis CSS</h1>
+<p class="naujaklase sugalvotasKlasesPavadinimas">
+  <span class="paryskintasTekstas">Išorinis</span> stilizavimas naudojamas tvarkingai ir teisingai stilizuojant elementus.
+</p>
+<p class="naujaklase">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, deleniti? 
+</p>
+  </div>
+<div> <!-- Konspektas -->
+  <div> <!-- CSS Rašymo būdai-->
+    <h1>CSS Rašymo būdai</h1>
+    <ul>
+      <li>Inline - Linijinis rašomas tag'o viduje naudojant style atributą. </li>
+      <li>Internal - Vidinis rašomas style tag'o viduje (head dalyje)</li>
+      <li>External - Išorinis rašomas atskirame CSS faile, kurį reikia prijungti pre html naudojant @import url ("") link tag'ą.</li>
+      </ul>
+  </div>
+  <div> <!-- CSS Selektoriai -->
+  <h1>CSS Selektoriai</h1>
+  <ul>
+    <li>element - Parenkamas elementas pagal jo pavadinima (p{})</li>
+    <li>id - Sukuriamas susigalvotas id pavadinimas ir priskiriamas vienam elementui (#idPavadinimas{})</li>
+    <li>class - Sukuriamas susigalvotas klasės pavadinimas ir priskiriamas bet kokiam kiekiui elementų (.klasesVardas{})</li>
+  </ul>
+  </div> 
+  <div><!-- Stiliai-->
+    <ul>
+       <li>color - skirtas pakeisti teksto spalvą (color: red)</li>
+       <li>font-size - skirtas pekeisti teksto dydį (font-size: 20px) </li>
+       <li>background-color - skirtas pakeisti fono spalvą (background-color: aqua)</li>
+       <li>font-family - skirtas pakeisti teksto šriftą (font-family: monospace)</li>
+       <li>font-weight - skirtas pakeisti teksto storumą (font-weight: bold)</li>
+       <li>line-height - skirtas pakeisti eilutės aukštį (line-height: 20px)</li>
+       <li>border - skirtas nurodyti rėmelio storį+tipą+spalvą (border: 5px solid black)</li>
+       <li>border-radius - skirtas apvalinti rėmelio kampus (border-radius: 10px)</li>
+       <li>text-align - skirtas lygiuoti tekstą (text-align: center)</li>
+       <li>font-style - skirtas suteikti tekstui stilių (font-style: italic)</li>
+       <li>list-style-type - skirtas pakeisti sąrašo žymėjimo tipą</li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
