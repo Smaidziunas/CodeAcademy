@@ -1,3 +1,23 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* Mokinamės selektor'ius */
+li{
+  font-size: 20px;
+}
+.klase0{
+  color: red;
+}
+#id0{
+  color: blue;
+}
+.class1.class2{
+  text-decoration:underline;
+}
+.class3 .class4{
+  text-decoration: line-through;
+}
+section.class3 *{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
