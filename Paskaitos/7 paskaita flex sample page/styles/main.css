@@ -1,0 +1,8 @@
+.navLink{
+  display: flex;
+  justify-content: space-between;
+}
+.noBulletPoints li{
+  text-decoration: none;
+  list-style-type: none;
+}
