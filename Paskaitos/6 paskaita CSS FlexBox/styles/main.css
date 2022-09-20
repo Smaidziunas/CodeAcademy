@@ -1,0 +1,122 @@
+.kvadratas{
+  width: 100px;
+  height: 100px;
+  background-color:rgb(40, 141, 224);
+  border: 5px solid black;
+  text-align: center;
+  line-height: 100px;
+  font-size: 26px;
+}
+
+.flexContainer {
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  /* flex-direction: column-reverse; */
+  flex-flow:row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  gap: 10px 20px;
+
+}
+.flexPirmas{
+  order: 1;
+}
+
+.flexAntras{
+  order: 2;
+}
+
+.flexTrecias{
+  order: 3;
+}
+.flexKetvirtas {
+  order: 4;
+}
+
+.pirmasPratimas{
+  display: flex;
+  gap: 30px;
+}
+
+.flexInFlex{
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.kvadratai{
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.flexInFlexInFlex{
+  display: flex;
+  gap: 30px;
+}
+
+.pirmasKvadratas{ 
+  width: 330px;
+  height: 230px;
+  border: 2px solid black;
+}
+
+.antrasKvadratas{
+  width: 330px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+
+.treciasKvadratas{
+  width: 150px;
+  height: 100px;
+  border: 2px solid black;
+}
+.ketvirtasKvadratas{
+  width: 150px;
+  height: 100px;
+  border: 2px solid black;
+}
+
+.bigTaskContainer{
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+}
+
+.w66{
+  width: 66%;
+}
+.w33{
+  width: 33%;
+}
+.h33{
+  height: 33%;
+}
+
+.containerTask{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.containerTaskNextLevel1{
+  display: flex;
+  gap: 3px;
+}
+
+.taskBg{
+  background-image: url(../images/autumn.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.h66{
+  height: 66%;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex puslapis</title>
+  <link rel="stylesheet" href="../styles/uzduotis.css" id="">
+  <link rel="icon" href="../images/dog logo.png">
+</head>
+<body>
+  <header style="position:fixed">
+    <div> <!-- img -->
+      <a href="#home">
+        <img src="../images/dog logo.png" class="logoImg">
+      </a>
+    </div>
+    <nav class="mainMenu">
+      <ul style="margin-left: 10px;">
+        <li><a href="#home">Home</a> </li>
+        <li><a href="#about">About</a> </li>
+        <li><a href="#contact">Contact</a> </li>
+      </ul>
+    </nav>
+  </header>
+  <article><!-- Hero -->
+    <div> 
+      <h1 id="home">
+        Šunų dresūra</h1>
+      <p>
+        Mažų ir didelių šunų pagrindinių komandų mokymas. 
+      </p>
+      <img src="../images/suo duoda ranka.jpg" alt=""> <!-- Suns Nuotrauka -->     
+    </article>
+  <article> <!-- About -->
+    <h1 id="about">
+      Ką veiksime?
+    </h1>
+    <p>
+      <ul class="noBulletPoints">
+        <li>Išmokinsime pagrindinių komandų ne tik greitai, bet ir kokybiškai</li> 
+        <li>Naudojame tik naujus mokymo metodus</li>
+        <li>Mokiname ir šeiminkus bei duodame vertingų patarimų pagal šuns veislę.</li>
+      </ul>
+    </p>
+    <h2>Tokios komandos kaip:</h2>
+    <div class="flexDisplay"> <!-- Video Examples -->
+      <div>
+        <iframe src="https://www.youtube.com/embed/q71ebQEFvkE?start=510" title="Basic leash walking" frameborder="0"></iframe>
+      </div>
+
+      <div>
+        <iframe src="https://www.youtube.com/embed/DqeXX8wkux0?start=489" title="Train to come no matter what" frameborder="0"></iframe>
+      </div>
+
+      <div>
+        <iframe src="https://www.youtube.com/embed/G-6nKUmrhso" title="Train to come no matter what" frameborder="0"></iframe>
+      </div>
+
+      <div>
+        <iframe src="https://www.youtube.com/embed/_5mtNzSZ-B0" title="Train to come no matter what" frameborder="0"></iframe>
+      </div>
+
+    </div>
+  </article>
+  <article> <!-- Contact -->
+    <h1 id="contact">Susisiekime</h1>
+    <form>
+      <label for="fname">Vardas:</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">El pašto adresas:</label><br>
+      <input type="text" id="lname" name="lname"><br>
+      <input type="submit" value="Submit">
+    </form>
+  </article>
+</main>
+<p></p>
+<footer class="footerDisplay">
+  <div> <!-- Logotipas -->
+    <a href="#"><img src="../images/dog logo.png" class="logoImg"></a>
+  </div>
+  <div>
+    <p> 
+    &copy; Martynas, 2022 <br>
+    <a href="mailto:sdamarcius@gmail.com">SuoMokytas@mokykla.lt</a>    
+    </p>
+  </div>
+</footer>
+</body>
+</html>

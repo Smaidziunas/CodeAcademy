@@ -37,3 +37,83 @@ margin: 50px;
 .padding1{
   padding: 30px;
 }
+
+/* Lenteles zymejimas 
+
+.nth_lentele > table {
+  border: 1px solid black;
+  border-collapse:collapse;
+  margin: 0 auto 50px;
+}
+
+.nth_lentele th, .nth_lentele td{
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+.nth_lentele tbody > tr:hover{
+  background-color: rgb(167, 100, 19);
+}
+
+.nth_lentele tbody > tr:nth-child(odd) {
+color: red;
+background-color:blue;
+}
+
+*/
+
+/* Stulepliu zymejimas 
+
+
+Position
+z-index
+content
+width+height / top+bottom+left+right
+background-color
+
+
+
+*/
+
+.nth_lentele > table {
+  border: 1px solid black;
+  border-collapse:collapse;
+  margin: 0 auto 50px;
+}
+
+.nth_lentele th, .nth_lentele td{
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+table {
+  overflow: hidden;
+  display:inline-block;
+}
+
+td, th{
+    border: 1px solid #999;
+    padding: 10px;
+    position: relative;
+}
+
+th{
+  background-color: aqua;
+}
+
+
+td:hover::after {   
+  background-color: rgb(223, 223, 16);
+  content: '';  
+  height: 1000px;    
+  left: 0;
+  position: absolute;  
+  top: -500px;
+  width: 100%;
+  z-index: -1;        
+}
+
