@@ -1,8 +1,41 @@
-.navLink{
+/* RESET */
+a{
+  text-decoration: none;
+  color: inherit 
+  /* paveldi spalva nuo tevinio elemento */
+}
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header */
+
+.mainHeader{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.noBulletPoints li{
-  text-decoration: none;
-  list-style-type: none;
+
+.logo{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.logo span {
+  font-weight: normal;
+}
+
+.navLink{
+  padding: 10px 20px;
+  /* border: 1px solid #000; 
+  galima raryti /bd/ */
+}
+
+.mainHeader a:hover{
+  background-color:rgb(199, 194, 194);
+}
+.mainHeader a {
+  letter-spacing: 4px;
 }
