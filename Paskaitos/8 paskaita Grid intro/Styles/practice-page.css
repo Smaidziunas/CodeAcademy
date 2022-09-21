@@ -1,0 +1,88 @@
+body {
+  font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* ourTeam */
+
+.ourTeam {
+  text-align: center;
+  padding: 3% 20px;
+}
+
+.teamItem {
+  /* border: 1px solid #000; */
+  text-align: center;
+  /*max-width: 120px;*/
+  /* max-width: 25%; */
+}
+
+
+.teamItem img {
+  border-radius: 50%;
+  transition: all 0.2s;
+  object-fit: cover;
+  width: 200px;
+}
+.teamItem img:hover {
+  opacity: 0.75;
+}
+.teamName {
+  font-weight: normal;
+  font-size: 25px;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.teamPosition {
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}  
+
+/* /////ourTeam */
+
+
+/* OUR WORK */
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #333333;
+  padding: 3% 20px;
+  gap: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15;
+}
+
+/* .gridContainer .h1 .gridItem .gridItem2{
+  font-weight: normal;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+} */
+
+.gridItem {
+  color: white;
+}
+
+.gridItem2 {
+  background-color  : white;
+}
+
+.gridItem2 img{
+  /* object-fit: cover; */
+  width: 100%;
+}
+
+.paddingForText {
+  padding:0.01em 16px
+}
+
+
+
+/* ////OUR WORK */
