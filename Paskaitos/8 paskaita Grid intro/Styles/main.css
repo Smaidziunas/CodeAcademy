@@ -1,0 +1,31 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+}
+
+.gridItem {
+  height: 150px;
+  background-color: coral;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridItem h2 {
+  color: white;
+  font-size: 30px;
+}
+
+.gridItem1 {
+  height: auto;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gridItem2 {
+  height: auto;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}

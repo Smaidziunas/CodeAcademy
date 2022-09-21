@@ -1,22 +1,70 @@
-/* RESET */
-a{
+/* RESET ==========*/
+
+* {
+  box-sizing: border-box;
+}
+
+
+a {
   text-decoration: none;
   color: inherit 
   /* paveldi spalva nuo tevinio elemento */
 }
-body{
+body {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin: 0;
+/* LAIKINAI KOL DIRBAM: */
+margin-bottom: 1000px;
+}
+img {
+  max-width: 100%;
+}
+/* //////RESET ========== */
+
+
+/* Common CSS ======= */
+
+.container {
+  max-width: 800px;
+  border: 1px dotted #000;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* margin-left ir margin-right dar buvo galima uzrasyti margin: 0 auto;
+   */
+  display: flex;
 }
 
-/* Header */
+/* //////////Common CSS ======= */
 
-.mainHeader{
+
+/* Helper CSS ========== */
+.flexCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ////// Helper CSS ========== */
+
+
+/* HEADER ==========*/
+.mainHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* Dazniau naudajama Fixed: 
+    position: sticky;
+    width: 100%;
+  */
+  position: sticky;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  box-shadow: 0px 4px 4px 0px;
+  z-index: 10;
 }
 
-.logo{
+.logo {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 20px;
@@ -27,15 +75,219 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: normal;
 }
 
-.navLink{
+.navLink {
   padding: 10px 20px;
   /* border: 1px solid #000; 
-  galima raryti /bd/ */
+  galima rasyti /bd/ */
 }
 
-.mainHeader a:hover{
+.mainHeader a:hover {
   background-color:rgb(199, 194, 194);
 }
 .mainHeader a {
   letter-spacing: 4px;
 }
+/* ////// HEADER ==========*/
+
+
+/* HERO ========== */
+
+.heroTitle span{
+  font-weight: normal;
+  color: white;
+}
+.heroTitle {
+  color: white;
+  font-size: 40px;
+}   
+
+.hero {
+  background-color: coral;
+  min-height: 100vh;
+  background: url("../images/architectHero.jpg") no-repeat center;
+  background-size: cover;
+}
+/* //////HERO ========== */
+
+
+/* Projects ========== */
+
+.projects{
+  padding: 40px 30px;
+}
+
+.project {
+  position: relative;
+  border: 1px solid #000;
+  flex-basis: 20%;
+  flex-grow: 1;
+
+}
+
+.projectsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  border: 1px solid rgb(235, 16, 16);
+}
+
+.prTitle{
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  font-weight: normal;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+
+
+/* //////Projects ========== */
+
+
+/* About ========== */
+
+.hr {
+  height: 1px;
+  margin-bottom: 20px;
+  background-color: #a2c0be;
+}
+
+.aboutSection{
+  padding: 40px 30px;
+}
+
+.aboutContainerBg {
+display: flex;
+gap: 10px;
+border: 1px solid #000;
+}
+
+.aboutContainerCard {
+  position: relative;
+  margin-left: 2px;
+}
+
+.aboutTitle {
+  font-weight: normal;
+}
+
+.positionTitle {
+opacity: 0.60;
+}
+
+.buttonContact {
+  display: block;
+  color: #000;
+  background-color: #F1F1F0;
+  width: 100%;
+  border: none;
+  padding: 8px 16px;
+}
+
+.buttonContact:hover{
+  background-color: #476260;
+  cursor: pointer;
+
+}
+
+/* ///////About ========== */
+
+
+/* Contact ========== */
+
+.formSection {
+  padding: 40px 30px;
+  line-height: 1.7;
+}
+
+.hrC {
+  height: 1px;
+  margin-bottom: 20px;
+  background-color: #a2c0be;
+}
+
+.formContainer {
+  background-color: #a2c0be;
+  max-width: 400px;
+  min-height: 500px;
+  padding: 20px 30px;
+}
+
+.input {
+  display: block;
+  padding: 5px 7px;
+  border: none;
+  font-size: 16px;
+  border-radius: 4px;
+  width: 100%;
+}
+.input:focus-visible {
+  outline-color: #476260;
+}
+/* flex container */
+.contactForm {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+/* flex item */
+/* .inputBlock { */
+  /* flex-basis: 47%; */
+
+
+.half {
+  flex-basis: 47%;
+}
+.full {
+  flex-basis: 100%;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.sendButton {
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* SECOND CONTAINER ###### */
+
+.contactUsCont {
+  z-index: 2;
+  background-color: #6c757d;
+  width: 400px;
+}
+
+.textCenter {
+display: flex;
+justify-content: center;  
+padding: 5px 7px;
+border: none;
+font-size: 16px;
+border-radius: 4px;
+width: 100%;
+margin-top: auto;
+}
+
+.textCenter p{
+list-style-type: none;
+color: #a8b1b8;
+}
+
+.textCenter span{
+  font-weight: bold;
+  color: white;
+}
+
+
+/* //////Contact ========== */
