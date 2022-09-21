@@ -1,3 +1,4 @@
+/* SIMPLE GRID */
 .gridContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -5,12 +6,14 @@
 }
 
 .gridItem {
-  height: 150px;
+  /* height: 150px; */
   background-color: coral;
   border: 1px solid #000;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: white;
 }
 
 .gridItem h2 {
@@ -19,13 +22,27 @@
 }
 
 .gridItem1 {
-  height: auto;
-  grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row: 1 / span 2;
 }
 
 .gridItem2 {
-  height: auto;
-  grid-column-start: 2;
-  grid-column-end: 4;
+  grid-column: 2 / span 2;
 }
+
+.gridItem6 {
+  grid-column: 2 / span 2;
+}
+/* ///////SIMPLE GRID */
+
+
+
+/* ##### UZDUOTIS GRID SIMPLE */
+
+
+
+
+
+
+
+
+/* ///// UZDUOTIS GRID SIMPLE */
