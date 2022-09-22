@@ -5,13 +5,69 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Uzduotis shipping</title>
-  <link rel="stylesheet" href="">
-  
-
+  <link rel="stylesheet" href="/styles/uzd_shipping.css">
 
 </head>
 
 <body>
+  <form>
+  <div class="containerBG">
+    <h1>Shipping address</h1>
+    <div class="gridCont rowDouble dropDownSelect">
+      <select class="textInput" id="dropDownList">
+        <option selected disabled value="Select Country">Select Country</option>
+        <option value="lithuania">Lithuania</option>
+        <option value="latvia">Latvia</option>
+        <option value="estonia">Estonia</option>
+        <option value="ukraine">Ukraine</option>
+      </select>
+    <div><small>Don't see your country listed head over to our <b>Rest of World</b> store</small>
+    </div>
+    </div>
+      <div class="gridCont">
+      <input class="textInput" type="text" placeholder="First name" />
+     </div>
+     <div class="gridCont">
+      <input class="textInput" type="text" placeholder="Last name" />
+      </div>
+      <div class="gridCont rowDouble">
+      <input class="textInput" type="text" placeholder="Address Line 1">
+     </div>
+      <div class="gridCont rowDouble">
+      <input class="textInput" type="text" placeholder="Address Line 2">
+      </div>
+     <div class="gridCont">
+      <input class="textInput" type="text" placeholder="City">
+     </div>
+      <div class="gridCont">
+      <input class="textInput" type="text" placeholder="Postal Code">
+      </div>
+      <div class="gridCont rowDouble">
+      <input class="textInput" type="tel" placeholder="Phone" />
+      </div>
+      <div class="rowDouble checkBox">
+      <input type="checkbox" id="saveForNextTime" />
+      <label for="saveForNextTime">Save this information next time</label>
+      </div>
+    <div class="gridCont rowDouble button">
+      <button class="returnToCartbutton" type="submit">
+        <i class="fa fa-chevron-left" aria-hidden="true"></i> Return to cart
+      </button>
+      <button class="continue" type="submit">
+         continue to shopping
+      </button>
+    </div>
+    <div class="gridCont rowDouble termsandcons">
+      <h3> By clicking, you accept T&C's</h3>
+      </div>
+  </div>
+  </form>
+
+
   
+
+
+
+
 </body>
 </html>
