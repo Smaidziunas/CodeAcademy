@@ -1,0 +1,78 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
+@import "/styles/marius_form_reset.css";
+
+.form {
+  max-width: 300px;
+  text-align: center;
+  max-width: auto;
+}
+
+.textInput {
+  width: 100%;
+  display: block;
+  border: none;
+  margin-bottom: 20px;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 25px;
+}
+.textInput:focus-visible{
+  outline: none;
+  width: 110%;
+}
+
+
+.textInput::placeholder {
+  color: #bdbdd3;
+}
+
+textarea.textInput {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submitBtn {
+  border: none;
+  padding: 10px 20px;
+  line-height: 1.1;
+  border-radius: 25px;
+  background-color: #827ffe;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+}
+
+.submitBtn:hover {
+  cursor: pointer;
+  background-color: #403866;
+  background-color: 2s;
+  padding: 10px 30px;
+  transition: padding 0.3s 0.4s;
+  
+}
+
+.submitBtn:focus {
+  outline: none;
+}
+
+.mb-20 {
+margin-bottom: 20px;
+display: flex;
+}
+
+              /* dropDownList */
+
+.dropDownSelect {
+display: flex;
+flex-direction: column;
+/* margin-bottom: 20px; */
+}
+
+select.textInput {
+  color: grey;
+}
+
+              /* dropDownList */
