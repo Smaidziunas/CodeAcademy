@@ -1,0 +1,79 @@
+@import url("https://necolas.github.io/normalize.css/latest/normalize.css");
+
+.gridCont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.h2 {
+  grid-column: span 3;
+  margin-left: 10px;
+}
+
+
+.post {
+  border-radius: 20px;
+  background-color: white;
+  padding: 20px 30px;
+}
+
+.gridArcticle1 {
+  grid-column: span 2;
+}
+
+.gridArcticle4 {
+  grid-column: 2 / span 2;
+}
+
+
+
+
+/* Tablet Screen */
+
+@media screen  and (min-width: 375px) and (max-width: 768px) {
+  .gridCont {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    background-color: orange;
+    max-width: 768px;
+    }
+
+    .gridArcticle1 {
+      grid-column: 1 / span 3; 
+    }
+    
+    .gridArcticle4 {
+      grid-column: 1 / span 3;
+    }
+}
+
+/* mobile view */
+@media screen  and (max-width: 375px) {
+  .gridCont {
+    display: block;
+    /* grid-template-columns: 1fr;     */
+    gap: 5px;
+    background-color: rgb(241, 60, 160);
+    max-width: 768px;
+    }
+
+    .post {
+      margin-bottom: 10px;
+    }
+
+    /* .article {
+      grid-column: span 1;
+    }
+
+    .gridArcticle1 {
+      grid-column: span 1; 
+    }
+    
+    .gridArcticle4 {
+      grid-column: span 1;
+    } */
+  }

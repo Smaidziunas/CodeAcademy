@@ -1,0 +1,78 @@
+@import url("https://necolas.github.io/normalize.css/latest/normalize.css");
+
+.gridCont {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.headerGrid {
+  grid-column: span 3;
+
+  background-color: tomato;
+  text-align: center;
+
+}
+
+.gridNavItem {
+  background-color: rgb(141, 70, 101);
+  /* text-align: center; */
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+}
+
+.gridNav {
+  gap: 10px;
+  /* padding: 10; */
+}
+
+
+.asideGrid { 
+  text-align: right;
+}
+
+.gridFooter {
+  grid-column: span 3;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: tomato;
+}
+
+
+
+
+/* Tablet Screen */
+
+@media screen  and (min-width: 375px) and (max-width: 768px) {
+  .gridCont {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 768px;
+    }
+  
+
+.gridMain {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+
+}
+
+}
+
+
+@media screen  and (max-width: 375px) {
+  .gridCont {
+    display: block;
+    gap: 5px;
+    }
+
+  .asideGrid {
+    text-align: left;
+  }
+
+  li {
+    padding-left: 10px;
+  }
+}

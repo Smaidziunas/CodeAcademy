@@ -23,9 +23,9 @@ background-color: tomato;
   min-height: 150px;
 }
 
-.flex .element {
+/* .flex .element {
   /* flex-grow: 1; */
-}
+
 
 
 
@@ -52,3 +52,5 @@ background-color: tomato;
     background-color: blanchedalmond;
   }
 }
+
+
