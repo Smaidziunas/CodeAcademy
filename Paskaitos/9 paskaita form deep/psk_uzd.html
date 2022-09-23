@@ -5,27 +5,71 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formos Uzduotis</title>
-  <link rel="stylesheet" href="/styles/psk_uzd.css">
+  <link rel="stylesheet" href="styles/psk_uzd.css">
+  <link rel="stylesheet" href="styles/marius_form_reset.css">
+
 </head>
 <body>
-
-  <form action="">
-
+  <!-- FORMA -->
+  <form>
+    <!-- DIDELIS CONTEINERIS -->
+    <!-- /DIDELIS CONTEINERIS -->
+    <div class="container"><h2 style="margin-top: 20px;">Registration</h2>
+      <!-- GRID  -->
     <div class="gridCont">
-      <h2>Registration</h2>
-      <div Class="flexItem">1</div>
-      <div Class="flexItem">2</div>
-      <div Class="flexItem">3</div>
-      <div Class="flexItem">4</div>
-      <div Class="flexItem"m>5</div>
-      <div Class="flexItem">6</div>
-      <div class="gridFull">Gender</div>
-      <div class="gridFull">Radio</div>
-      <div class="gridFull">Submit Register</div>
 
+      <div Class="flexInGrid">
+        <label for="full name">Full name</label>
+        <input class="textInput" type="text" placeholder="Enter your name" />
+      </div>
+      <div Class="flexInGrid">
+        <label for="user name">Username</label>
+        <input class="textInput" type="text" placeholder="Enter your username" />
+      </div>
+      <div Class="flexInGrid">
+        <label for="email">Email</label>
+        <input class="textInput" type="email" placeholder="Enter your email" />
+      </div>
+      <div Class="flexInGrid">
+        <label for="phone">Phone Number</label>
+        <input class="textInput" type="tel" placeholder="Enter your phone Number" />
+      </div>
+      <div Class="flexInGrid">
+        <label for="password">Password</label>
+        <input class="textInput" type="password" placeholder="Enter your Password"/>
+      </div>
+      <div Class="flexInGrid">
+        <label for="confirmPassword">Confirm Password</label>
+        <input class="textInput" type="password" placeholder="Confirm your Password"/>
+      </div>
+      <div class="gridFull">
+        <h2>Gender</h2>
+      </div>
+      <div class="gridFull">
+        <fieldset class="fieldset">
+          <div>
+            <input type="radio" id="male" value="Male" name="genderButtons" />
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input type="radio" id="female" value="Female" name="genderButtons" />
+            <label for="female">female</label>    
+          </div>
+          <div>
+            <input type="radio" id="notSay" value="NotSay" name="genderButtons" />
+            <label for="notSay">Prefer not to say</label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="gridFull">
+        <button class="button">Register</button>
+      </div>
 
     </div>
-  </form>
 
+    </div>
+    <!-- /GRID  -->
+  </form>
+  <!-- /FORMA -->
 </body>
 </html>

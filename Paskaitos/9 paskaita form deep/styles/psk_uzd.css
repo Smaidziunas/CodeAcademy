@@ -1,9 +1,62 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css");
 
 
+.regCont {
+  max-width: 900px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 
 .gridCont {
   display: grid;
-  grid-template-columns: repeat(2, fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  /* grid-template-rows: 20px; */
+  
+}
+
+.flexInGrid {
+  background-color: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.gridFull {
+  grid-column: span 2; 
+  background-color:none;
+  border: none;
+}
+
+.textInput{
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  background-color: rgb(237 237 237);
 
 }
+
+.fieldset {
+
+  border: none;
+}
+
+
+.button {
+
+  width: 100%;
+  border-radius: 2px;
+  background-color: coral;
+  color: white;
+  cursor: pointer;
+  border: none;
+
+  padding-top: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  height: 20px;
+}
+
