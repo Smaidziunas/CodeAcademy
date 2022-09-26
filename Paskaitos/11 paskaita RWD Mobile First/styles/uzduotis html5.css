@@ -1,0 +1,140 @@
+
+/* Global */
+
+html {
+  font-size: 16px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  border-radius: 0;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+  padding: 0 1.5rem;
+}
+
+.hero__title {
+  font-size: 1.5rem;
+}
+
+.hero__hr {
+  background-color: #fff;
+  height: 2px;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.hero__subTitle {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+/* POSTS */
+
+.post {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.post__overlay1 {
+  background-color:rgba(46, 158, 192, 0.664);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 1;
+}
+.post__overlay2 {
+  background-color:rgba(137, 18, 167, 0.664);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 1;
+}
+.post__overlay3 {
+  background-color:rgba(255, 99, 71, 0.651);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 1;
+}
+.post__overlay4 {
+  background-color:rgba(219, 133, 20, 0.664);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 1;
+}
+.post__overlay5 {
+  background-color:rgba(12, 119, 151, 0.664);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 1;
+}
+.post__overlay6 {
+  background-color:rgba(34, 182, 15, 0.664);
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  z-index: 1;
+}
+
+.post__header {
+  align-self: center;
+  max-width: 60%;
+  padding: 0 1.5rem;
+  z-index: 2;
+}
+
+.post__header,
+.post__image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.post__overlay1 {
+  transition: opacity 0.2s;
+}
+.post:hover .post__overlay {
+  opacity: 0.4;
+}
+
+.post__hr {
+  background-color: #fff;
+  height: 2px;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.post7 {
+  padding-top: 44px;
+  background-color: #2a2f4a;
+}
+
+
+
+/* Responsive */
+
+/* Tablet portrait */
+
+@media screen and (min-width: 480px) {
+  .posts {
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+  }
+
+  
+}
