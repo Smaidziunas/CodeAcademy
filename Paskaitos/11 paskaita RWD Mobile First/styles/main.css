@@ -1,0 +1,84 @@
+
+h1:before {
+  content: 'Mobile';
+}
+
+article {
+  background-color: tomato;
+}
+
+.post_2 h3, p {
+  display: none;
+}
+
+/* img {
+  display: none;
+} */
+
+
+
+@media  screen and (min-width:768px) {
+  /* Tablet screen */
+
+  article {
+    background-color: tomato;
+  }
+
+  .post_2 h3, p {
+    display: none;
+  }
+
+
+
+  /* .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  } */
+  
+  /* h1 {
+    grid-column: span 3;
+  } */
+
+  h1:before {
+    content: 'Tablet';
+  }
+  
+  .posts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+
+  } 
+
+
+  .post_1 {
+    grid-column: span 4;
+  }
+
+  .post_2 {
+    grid-column: span 2;
+  }
+
+}
+
+
+
+
+@media  screen and (min-width:1024px) {
+  /* Dekstop Scren */
+
+
+  article {
+    background-color: rgb(252, 63, 30);
+  }
+
+  .posts {
+    gap: 20px;
+  }
+
+  h1:before {
+    content: "Dekstop";
+  }
+  
+
+}
