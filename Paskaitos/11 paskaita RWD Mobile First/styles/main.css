@@ -3,6 +3,22 @@ h1:before {
   content: 'Mobile';
 }
 
+html {
+  font-size: 100%;
+}
+
+.post {
+  margin-bottom: 1rem;
+}
+
+.posst p {
+  font-size: 16px;
+}
+
+.post h3 {
+  font-size: 1.4rem;
+}
+
 article {
   background-color: tomato;
 }
@@ -19,6 +35,14 @@ article {
 
 @media  screen and (min-width:768px) {
   /* Tablet screen */
+
+
+  html {
+    font-size: 120%;
+  }
+  .post {
+    margin-bottom: 0;
+  }
 
   article {
     background-color: tomato;
@@ -46,7 +70,7 @@ article {
   .posts {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 1rem;
 
   } 
 
@@ -66,6 +90,10 @@ article {
 
 @media  screen and (min-width:1024px) {
   /* Dekstop Scren */
+
+  html {
+    font-size: 145%;
+  }
 
 
   article {
