@@ -1,0 +1,31 @@
+@import "/styles/marius_form_reset.css";
+
+body {
+  overflow: hidden;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: auto 30%;
+  gap: 20px;
+}
+
+main {
+  background-color: aqua;
+}
+
+aside {
+  background-color: rgb(245, 146, 16);
+  max-height: 300px;  
+  border: 1px solid #000;
+  /* overflow-x: scroll; */
+  overflow-y: scroll;
+}
+
+aside.card {
+  background-color: #000;
+  color: snow;
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
