@@ -11,43 +11,63 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/responsive.css">
 
 </head>
 <body>
-
   <header class="main-header">
     <div class="container">
-      <a class="logo" href="index.html">Nitro<span>.</span></a>
+      <a href="index.html" class="logo">Nitro<span>.</span></a>
       <nav class="main-nav">
-        <i class=" burger fa fa-bars" aria-hidden="true"></i>
-      </nav>      
+        <ul class="unlisted">
+          <li><a href="#" class="main-nav__link">Home</a></li>
+          <li><a href="#" class="main-nav__link">About</a></li>
+          <li><a href="#" class="main-nav__link">Testimoial</a></li>
+          <li><a href="#" class="main-nav__link">Contact us</a></li>
+        </ul>
+        <i class="burger fa fa-bars" aria-hidden="true"></i>
+      </nav>
     </div>
   </header>
 
   <section class="hero add-overlay">
 
-    <h1 class="title">Welcome</h1>
-    <p class="hero__sub">Lorem ipsum dolor sit amet consectetur <br class="none"> adipisicing elit. Error minus perferendis modi architecto itaque dolores, nam quasi voluptates adipisci nulla corporis. Eum placeat reprehenderit quasi voluptatem recusandae ipsa alias enim.</p>
+    <h1>Welcome</h1>
+    <p class="hero__sub">Lorem ipsum dolor sit amet consectetur <br class="d-none"> adipisicing elit. Optio soluta eius
+      error.</p>
     <button class="btn">Get in touch</button>
   </section>
 
-  <!-- OUR TEAM -->
-  <Section class="our-team"></Section>
-  <h2 class="section-title"> Our team</h2>
-  <p class="section-subtitle"></p>
+
+  <section class="our-team container">
+
+    <h2 class="section-title">Our team</h2>
+    <p class="section-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio soluta eius error.</p>
     <div class="team-container">
       <!-- team card -->
       <div class="team-card">
-        <img src="./img/work1.webp" alt="James Bond" class="team-card__image">
+        <div class="team-img-container">
+          <img src="./img/work1.webp" alt="James Bond" class="team-card__image">
+          <ul class="unlisted our-team__social-list">
+            <li><a href="" class="our-team__social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="" class="our-team__social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="" class="our-team__social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="" class="our-team__social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+
         <div class="team-card__description">
           <h3 class="team-card__name">James Bond</h3>
           <p class="team-card__ocupation">007</p>
         </div>
+
       </div>
       <!-- /team card -->
       <!-- team card -->
       <div class="team-card">
         <img src="./img/work2.webp" alt="James Bond" class="team-card__image">
+
         <div class="team-card__description">
           <h3 class="team-card__name">James Bond</h3>
           <p class="team-card__ocupation">007</p>
@@ -63,50 +83,60 @@
         </div>
       </div>
       <!-- /team card -->
-    </div>
-  
-  <!-- FOOTER -->
-  <footer class="footer container">
-    <div class="footer-grid">
-      <div class="footer-about footer__item">
-        <h3 class="footer__title">About</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum exercitationem magnam porro dolorem.
-          Voluptates. </p>
-      </div>
-      <div class="footer-nav-container footer__item">
-        <h3 class="footer__title">Quick links</h3>
-        <nav class="footer-nav">
-          <a href="#" class="footer-nav__link">About us</a>
-          <a href="#" class="footer-nav__link">Services</a>
-          <a href="#" class="footer-nav__link">Testimonials</a>
-          <a href="#" class="footer-nav__link">Contact us</a>
-        </nav>
-      </div>
-      <div class="footer-folow footer__item">
-        <h3 class="footer__title">Folow us</h3>
-        <div class="footer__icons">
-          <a href="" class="social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-          <a href="" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href="" class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <!-- team card -->
+      <div class="team-card">
+        <img src="./img/work4.webp" alt="James Bond" class="team-card__image">
+        <div class="team-card__description">
+          <h3 class="team-card__name">Mike Bordiuraskas</h3>
+          <p class="team-card__ocupation">007</p>
         </div>
       </div>
-      <div class="footer-newsletter footer__item">
-        <h3 class="footer__title">Subscribe Newsletter</h3>
-        <form class="footer__form">
-          <input type="email" placeholder="Enter Email">
-          <button type="submit">Send</button>
-        </form>
+      <!-- /team card -->
+    </div>
+  </section>
+
+  <footer class="footer ">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about footer__item">
+          <h3 class="footer__title">About</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi dolorum exercitationem magnam porro dolorem.
+            Voluptates. </p>
+        </div>
+        <div class="footer-nav-container footer__item">
+          <h3 class="footer__title">Quick links</h3>
+          <nav class="footer-nav">
+            <a href="#" class="footer-nav__link">About us</a>
+            <a href="#" class="footer-nav__link">Services</a>
+            <a href="#" class="footer-nav__link">Testimonials</a>
+            <a href="#" class="footer-nav__link">Contact us</a>
+          </nav>
+        </div>
+        <div class="footer-folow footer__item">
+          <h3 class="footer__title">Folow us</h3>
+          <div class="footer__icons">
+            <a href="" class="social-link"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="" class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-newsletter footer__item">
+          <h3 class="footer__title">Subscribe Newsletter</h3>
+          <form class="footer__form">
+            <input type="email">
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer__hr"></div>
+        <p>2022 All rights reserved | This template is made with Love</p>
       </div>
     </div>
-
-    <div class="footer-bottom">
-      <div class="footer__hr"></div>
-      <p>2022 All rights reserved | This template is made with Love</p>
-    </div>
-
   </footer>
-  <!-- /FOOTER -->
 
 </body>
+
 </html>
