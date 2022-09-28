@@ -1,0 +1,134 @@
+@import "/styles/marius_form_reset.css";
+
+/* ###########  LENTELE */
+body{
+  background-image: linear-gradient(to right, #7155ca, #c450c1);
+}
+
+
+table {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+}
+
+.tableContainer {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+  padding: 33px 30px;
+  width: 100%;
+}
+
+.mainTable {
+  width: 950px;
+  place-items: center;
+  text-align: center;
+  border-collapse: collapse ;
+}
+
+
+thead th {
+  color: #fff;
+  padding: 1.5em 0;
+  background-color: #36304a;
+  font-weight: normal;
+}
+
+tbody tr{
+  background-color: #ffffff;
+}
+
+.mainTable td {
+  padding: 1.5em 1.5em;
+  color: grey;
+}
+.mainTable tbody tr {
+
+  background-color: #fff;
+}
+.mainTable tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+.mainTable tbody tr:hover {
+  color: #555;
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+/* ///////////LENTELE */
+
+
+
+/* ######### DROP DOWN NAV MENU */
+
+
+.logo {
+  margin-bottom: 0;
+  padding: 0.3em 0;
+}
+
+.mainHeader .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mainNav > ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.unlisted {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.navLink {
+  padding: 0.5em 1.2em;
+  background-color: rgb(247, 251, 254);
+}
+.navLink:hover {
+  background-color: aliceblue;
+}
+
+/* HOVER sub menu */
+
+.hasSubMenu {
+  position: relative;
+}
+
+.hasSubMenu::after {
+  content: '\f078';
+  font-family: 'FontAwesome';
+  font-size: small;
+}
+
+.hasSubMenu:hover::after {
+  transform: rotate(180deg);
+}
+
+.hasSubMenu:hover .subMenu {
+  /* display: block; */
+  transform: scaleY(1) translateY(0);
+  opacity: 1;
+}
+
+.subMenu {
+  /* display: none; */
+  transform: scaleY(0);
+  transform-origin: top;
+  /* transform: translateX(500px); */
+  /* opacity: 0; */
+  transition: transform 0.2s, opacity 0.4s;
+  position: absolute;
+  min-width: 140px;
+  left: 0;
+  top: 100%;
+}
+
+/* ///////// DROP DOWN NAV MENU */
