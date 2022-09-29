@@ -1,0 +1,45 @@
+header{
+  height: 100px;
+  background-color: rgba(133, 133, 133, 0.233);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: sticky;
+  top: 0;
+}
+
+.menuLogo > a{
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+}
+.menuLogo > a > span{
+  color: blue;
+}
+
+.mainMenuBurger span::before{
+  font-weight: bold!important;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.mainMenu{
+  display: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.mainMenu > li > a{
+  text-decoration: none;
+  color: rgb(199, 199, 199);
+  font-size: 18px;
+  padding: 5px 12px;
+}
+
+.mainMenu > li > a:hover{
+  color: white;
+}

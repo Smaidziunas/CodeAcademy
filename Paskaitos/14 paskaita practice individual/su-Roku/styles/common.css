@@ -1,0 +1,17 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: rgb(57, 56, 56);
+  height: 1000vh;
+}
+
+section{
+  min-height: 30vh;
+  padding: 100px 0 20px;
+  background-color: aliceblue;
+}
+
+.container{
+  margin: 0 10% 0;
+}
