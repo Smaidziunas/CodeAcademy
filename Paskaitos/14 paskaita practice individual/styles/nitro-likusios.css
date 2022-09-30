@@ -1,5 +1,16 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+
 
 /* mobile first */
+
+/* variables */
+
+html {
+  --title-color: #007bff;
+}
+
 
 /* general */
 
@@ -10,6 +21,7 @@ html {
 
 body a {
   color: #007bff;
+  text-decoration: none;
 }
 
 body p {
@@ -18,8 +30,13 @@ body p {
 
 h3, p {
   font-family: 'Open Sans', sans-serif;
+  margin-top: 0px;
 }
 
+.title {
+  padding: 20px 30px;
+  margin-bottom: 20px;
+}
 h3 {
   margin-bottom: 0.5rem;
   font-weight: 500;
@@ -64,6 +81,7 @@ h3 {
 .about--flex1-inside1, .about--flex1-inside2 {
   margin-bottom: 2em;
 }
+
 /* //////////ABOUT SECTION */
 
 
@@ -72,23 +90,51 @@ h3 {
 
 /* ########## OUR SERVICES */
 
+.services-section {
+  background-color: #f8f9fa;
+}
 
+.services-title {
+  font-size: 30px;
+  color: var(--title-color);
+  margin-bottom: 48px;
+}
 
+.services-card {
+  margin-bottom: 1.5rem;
+}
 
-
-
-
+.services-card__icons {
+  margin-bottom: 1rem;
+}
 /* //////////OUR SERVICES */
 
 
 
+/* ########## CONTACT US */
+
+.contacts-section {
+  background-color: #f8f9fa;
+}
+
+.contacts-title {
+  font-size: 30px;
+  color: var(--title-color);
+  margin-bottom: 48px;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.mapDetails p:before {
+  content: "\F3E7"
+}
 
 
 
 
 /* Responsive */
 
-
+/* Dekstop */
 @media screen and (min-width: 1000px) { 
 
   .container {
@@ -100,6 +146,7 @@ h3 {
     margin-left: auto;
   }
   
+/* about section */
   .about--container--flex {
     flex-direction: row;
     justify-content: space-between;
@@ -120,5 +167,27 @@ h3 {
     padding: 5em;
   }
   
+
+  /* OUR SERVICES */
+
+  .services-title {
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .services-Grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* .services-card {
+    ;
+  } */
 
 }
