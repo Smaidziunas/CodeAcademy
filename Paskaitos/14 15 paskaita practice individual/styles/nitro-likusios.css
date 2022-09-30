@@ -14,9 +14,13 @@ html {
 
 /* general */
 
+* {
+  box-sizing: border-box;
+}
 
 html {
   font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
 }
 
 body a {
@@ -26,6 +30,10 @@ body a {
 
 body p {
   color: grey;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 h3, p {
@@ -125,14 +133,90 @@ h3 {
   margin-bottom: 3rem;
 }
 
-.mapDetails p:before {
-  content: "\F3E7"
+.correspondence-wrapper {
+  margin-bottom: 3rem;
+}
+
+.contact-details-wrap {
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+
+.mapIcon {
+  margin-bottom: 0.5rem;
+}
+.phoneIcon {
+  margin-bottom: 0.5rem;
+}
+.emailIcon {
+  margin-bottom: 0.5rem;
+}
+
+
+/* CONTACTS FORM */
+
+.form-wrapper {
+  background-color: #fff;
+  padding: 5rem;
+}
+
+.form-title {
+  margin-bottom: 3rem;
+}
+
+.form-display {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.input-container input {
+  border: 1px solid #ced4da;
+  border-radius: 30px;
+  padding: 0.5rem;
+  height: 43px;
+}
+.form-display textarea {
+  border: 1px solid #ced4da;
+  border-radius: 30px;
+  padding: 0.8rem;
+  /* height: 43px; */
+}
+
+.sendBtn {
+  margin-bottom: 1rem;
+}
+
+.sendBtn input{
+  display: block;
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 30px;
+}
+
+.form-display textarea::placeholder {
+  color: grey;
 }
 
 
 
 
-/* Responsive */
+
+
+
+/* ################################ Responsive */
 
 /* Dekstop */
 @media screen and (min-width: 1000px) { 
@@ -186,8 +270,30 @@ h3 {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* .services-card {
-    ;
+
+  /* CONTACT US */
+
+  .correspondence-wrapper {
+    display: flex;
+  }
+
+
+  .nameGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+
+  /* GALIMA BUVO IR SU FLEXU, NAUDOJANT FLEX BASIS
+   .nameGrid {
+    display: flex;
   } */
+
+  /* .name, .lastName {
+    flex-basis: 50%;
+    width: 100%;
+  } */
+
 
 }
