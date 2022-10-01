@@ -1,0 +1,99 @@
+@import "/reset.css";
+
+/* ######### MOBILE FIRST */
+
+
+
+/* #################### HEADER */
+
+.arrow::after {
+  content: "\f107";
+    position: absolute;
+    right: 15px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+.menuHome {
+   color: #007bff;
+}
+
+h2 {
+  font-family:'Poppins', sans-serif;
+}
+
+.burgerMenu {
+  display: none;
+  position: absolute;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  background-color: white;
+  list-style: none;
+  /* center aligment */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainMenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  background-color: rgb(224, 204, 137);
+  max-width: 900px;
+}
+
+.mainMenu li {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.mainMenu li a {
+  color: rgb(12, 1, 1);
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+
+.mainMenu li a:hover {
+  color: #5a5147;
+}
+
+.dropdown {
+  position: absolute;
+  width: 100%;
+  flex-wrap: wrap;
+  display: none;
+  left: 0;
+}
+
+.mainMenu li:hover .dropdown {
+  display: block;
+}
+
+.dropdown2 {
+  display: none;
+  position: absolute;
+  left: -100%;
+  top: 0;
+}
+
+.dropdown li:hover .dropdown2 {
+  display: block;
+}
+
+.mainMenu li, .mainMenu a{
+  text-transform:uppercase;
+}
+
+
+

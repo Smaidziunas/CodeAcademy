@@ -1,0 +1,70 @@
+
+/* example test */
+
+.burgerMenu {
+  position: absolute;
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  background-color: white;
+  list-style: none;
+  /* center aligment */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  background-color: rgb(224, 204, 137);
+  max-width: 900px;
+}
+ul li {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  display: inline-block;
+}
+ul li a:hover {
+  color: rgb(230, 215, 197);
+}
+
+.dropdown {
+  position: absolute;
+  width: 100%;
+  flex-wrap: wrap;
+  display: none;
+  left: 0;
+}
+
+ul li:hover .dropdown {
+  display: block;
+}
+
+.dropdown2 {
+  display: none;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  flex-wrap: wrap;
+}
+
+.dropdown li:hover .dropdown2 {
+  display: block;
+  left: -100%;
+}
+
+
