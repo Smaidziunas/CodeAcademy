@@ -1,3 +1,9 @@
+$primary-color: darkgreen;
+$secondary-color: tomato;
+$main-font: Verdana, Arial, sans-serif;
+
+
+
 body {
   .container { 
     h1 {
@@ -5,7 +11,8 @@ body {
     font-weight: normal;
     }
     h3 {
-      color: blue($color: #000000);
+      font-size: 2.1rem;
+      color: darkblue;
     }
   }
 }
