@@ -1,0 +1,131 @@
+@use 'reset';
+@use 'vars';
+@use 'common';
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+
+
+
+
+// latest news
+
+.late-news {
+  background-color: #333;
+  color: #fff;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+  .container>.btn {
+    margin-bottom: 2rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .news__title {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .news__subtitle {
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .news-posts {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .single-post {
+    display: flex;
+    flex-direction: column;
+
+    &__description {
+      background-color: #fff;
+      color: #333;
+      padding: 1rem;
+    }
+
+    &__title {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    &__short {
+      margin-bottom: 2rem;
+    }
+
+    &__link {
+      color: var(--main-color)
+    }
+  }
+}
+// latest news
+
+
+// COunters
+
+@mixin flex-box($mwidth: 600px, $justCont:center) {
+
+display: flex;
+min-width: $mwidth;
+flex-direction: row;
+margin-left: auto;
+margin-right: auto;
+justify-content: $justCont;
+padding: 0 10px;
+
+&__number1 {
+border-right: 1px solid white;
+}
+&__number2 {
+border-right: 1px solid white;
+}
+}
+
+.flexp {
+padding: 0 60px;
+margin-block-end: 0;
+line-height: 0.7em;
+}
+
+.counters {
+  padding: 5rem 20px;
+  background-color: orange;
+  background: url('/illdy/img/front-page-counter.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.counter-flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  }
+
+  
+.counter-flex p {
+  box-sizing: border-box;
+  font-weight: 600;
+    font-size: 60px;
+    color:#fff;
+    text-align: center;
+    line-height: 1em;
+    height: 100%;
+
+    .word {
+      font-size: 20px;
+      font-weight: normal;
+    }
+
+  }
+
+
+
+
+
+
+
+@import 'media';

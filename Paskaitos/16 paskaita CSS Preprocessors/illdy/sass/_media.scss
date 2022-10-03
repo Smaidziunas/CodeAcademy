@@ -1,0 +1,38 @@
+@media screen and (min-width: 600px) {
+  .late-news {
+    .news-posts {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  .counter-flex {
+    @include flex-box($mwidth: 600px, $justCont:center);
+  }
+
+  .counter-flex p{
+    padding: 0 60px;
+    margin-block-end: 0;
+    line-height: 0.7em;
+  }
+  
+  }
+
+
+
+@media screen and (min-width: 1000px) {
+  .late-news {
+    .news-posts {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .counter-flex {
+    @include flex-box($mwidth: 1000px, $justCont:center);
+  }
+
+  .counter-flex p{
+    padding: 0 120px;
+    margin-block-end: 0;
+    line-height: 0.7em;
+  }
+}
